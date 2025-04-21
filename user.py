@@ -4,6 +4,26 @@ import csv
 # CLI => Command Line Interface
 # CRUD => Create, Read, Update, Delete
 # 80% - 90% CRUD
+
+# go to git bash
+# git config --global user.name "Satish Singh Kunwar"
+# git config --global user.email "satishsinghkunwar@gmail.com"
+
+# first Time 
+#git init => git initialize
+#git status => if you want to check what are the status of files
+#git diff => if you want to check what are the changes
+#git add . => Track all the files
+#git commit -m "Your message"
+#copy paste git code from github
+
+# 1. change the code
+# 2. git add.
+# 3. git commit -m "Your Message"
+# 4. git push
+
+
+
 def create_connection():
     try:
         con = sqlite3.connect("users.sqlite3")
