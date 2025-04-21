@@ -17,20 +17,13 @@ import csv
 #git commit -m "Your message"
 #copy paste git code from github
 
+# 80% - 90% you will do these while working in companies
+
 # 1. change the code
 # 2. git add.
 # 3. git commit -m "Your Message"
 # 4. git push
 
-
-
-def create_connection():
-    try:
-        con = sqlite3.connect("users.sqlite3")
-    except Exception as e:
-        print(e)
-
-    
 
 INPUT_STRING = """
 Enter the option:
@@ -45,6 +38,16 @@ Enter the option:
     9. UPDATE user
     10. Press any key to EXIT
 """
+
+def create_connection():
+    try:
+        con = sqlite3.connect("users.sqlite3")
+    except Exception as e:
+        print(e)
+
+    
+
+
 
 
 def create_table(con):
